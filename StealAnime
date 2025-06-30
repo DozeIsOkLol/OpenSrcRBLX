@@ -1,0 +1,209 @@
+--give credits to @KMAN & @DOZE
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Steal Anime")
+ 
+local Ability = Window:NewSection("Ability's")
+
+Ability:CreateButton("Rasengan (Ability)", function()
+
+local args = {
+	1
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+Ability:CreateButton("Leaf Dragon (Ability)", function()
+
+local args = {
+	6
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+Ability:CreateButton("Clap Roar (Ability)", function()
+
+local args = {
+	9
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+local Cash = Window:NewSection("Cash")
+
+Cash:CreateButton("2.5K Cash", function()
+
+local args = {
+	2
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+Cash:CreateButton("+5K Cash", function()
+
+local args = {
+	10
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+Cash:CreateButton("10K Cash", function()
+
+local args = {
+	5
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+Cash:CreateButton("Inf Cash", function()
+
+local args = {
+	8
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+
+local args = {
+	10
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+
+end)
+
+Cash:CreateButton("x2 Cash (OP)", function()
+
+local args = {
+	8
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+local Spins = Window:NewSection("Spins")
+
+Spins:CreateButton("+1 Spin", function()
+
+local args = {
+	3
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+
+Spins:CreateButton("+2 Spins", function()
+
+local args = {
+	7
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+end)
+
+local Credits = Window:NewSection("Credits")
+
+
+Credits:CreateButton("OG Script: TGMANKASKE", function()
+
+end)
+
+Credits:CreateButton("Load OG Script", function()
+ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Script")
+ 
+local Tab = Window:NewSection("Credits: TGMANKASKE")
+ 
+Tab:CreateButton("Inf. Money", function()
+print("HI")
+
+local args = {
+	8
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+
+local args = {
+	10
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("+2 Spins", function()
+print("HI")
+
+local args = {
+	7
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinPrizeEvent"):FireServer(unpack(args))
+
+end)
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+end)
+
+Credits:CreateButton("OG Upload: KMAN", function()
+
+end)
+
+Credits:CreateButton("UPD Script: DOZE", function()
+
+end)
+
+local TGMANKASKE = Window:NewSection("TGMANKASKE Links")
+ 
+TGMANKASKE:CreateButton("Discord Group", function()
+
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+TGMANKASKE:CreateButton("Youtube", function()
+
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+TGMANKASKE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/KMAN")
+toclipboard("https://scriptblox.com/u/KMAN")
+ 
+end)
+
+TGMANKASKE:CreateButton("They Copy To Clipboard", function()
+
+end)
+
+local DOZE = Window:NewSection("DOZE Links")
+ 
+DOZE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/DOZE")
+toclipboard("https://scriptblox.com/u/DOZE")
+ 
+end)

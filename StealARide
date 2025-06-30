@@ -1,0 +1,603 @@
+--give credits to @KMAN & @DOZE
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Steal a Ride")
+ 
+local Spaceship = Window:NewSection("Spaceship")
+
+Spaceship:CreateButton("Starfighter (Best)", function()
+
+local args = {
+	"Starfighter"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Spaceship:CreateButton("Trifighter", function()
+
+local args = {
+	"Trifighter"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Spaceship:CreateButton("Nameless Ship", function()
+
+local args = {
+	"Nameless Ship"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Spaceship:CreateButton("Blaster", function()
+
+local args = {
+	"Blaster"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Spaceship:CreateButton("Lightning Speed", function()
+
+local args = {
+	"Lightning Speed"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+local Divine = Window:NewSection("Divine")
+
+Divine:CreateButton("Minecart", function()
+
+local args = {
+	"Minecart"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Divine:CreateButton("Jumbo Jet", function()
+
+local args = {
+	"Jumbo Jet"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Divine:CreateButton("Spaceship", function()
+
+local args = {
+	"Spaceship"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Divine:CreateButton("Elephant", function()
+
+local args = {
+	"Elephant"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Divine:CreateButton("Race Car", function()
+
+local args = {
+	"Race Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Mythical = Window:NewSection("Mythical")
+
+Mythical:CreateButton("Sleigh", function()
+
+local args = {
+	"Sleigh"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Mythical:CreateButton("Space Shuttle", function()
+
+local args = {
+	"Space Shuttle"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Mythical:CreateButton("Alien Saucer", function()
+
+local args = {
+	"Alien Saucer"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Mythical:CreateButton("Dragon", function()
+
+local args = {
+	"Dragon"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Mythical:CreateButton("Super Car", function()
+
+local args = {
+	"Super Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+local Legendary = Window:NewSection("Legendary")
+
+Legendary:CreateButton("Futuristic Supercar", function()
+
+local args = {
+	"Futuristic Supercar"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Submarine", function()
+
+local args = {
+	"Submarine"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Drift Car", function()
+
+local args = {
+	"Drift Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Tank", function()
+
+local args = {
+	"Tank"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Helicopter", function()
+
+local args = {
+	"Helicopter"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Fighter Jet", function()
+
+local args = {
+	"Fighter Jet"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Train", function()
+
+local args = {
+	"Train"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Flying Carpet", function()
+
+local args = {
+	"Flying Carpet"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+local Rare = Window:NewSection("Rare")
+
+Rare:CreateButton("Rally Car", function()
+
+local args = {
+	"Rally Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Jet Ski", function()
+
+local args = {
+	"Jet Ski"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Monster Truck", function()
+
+local args = {
+	"Monster Truck"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Limo", function()
+
+local args = {
+	"Limo"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Armoured Car", function()
+
+local args = {
+	"Armoured Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Propeller Plane", function()
+
+local args = {
+	"Propeller Plane"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Snow Mobile", function()
+
+local args = {
+	"Snow Mobile"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("School Bus", function()
+
+local args = {
+	"School Bus"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Speed Boat", function()
+
+local args = {
+	"Speed Boat"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Fire Truck", function()
+
+local args = {
+	"Fire Truck"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+local UnCommon = Window:NewSection("Uncommon")
+
+UnCommon:CreateButton("Ice Cream Truck", function()
+
+local args = {
+	"Ice Cream Truck"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Pickup Truck", function()
+
+local args = {
+	"Pickup Truck"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Van", function()
+
+local args = {
+	"Van"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Police Car", function()
+
+local args = {
+	"Police Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Tuk Tuk", function()
+
+local args = {
+	"Tuk Tuk"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Horse", function()
+
+local args = {
+	"Horse"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Taxi", function()
+
+local args = {
+	"Taxi"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Mattress", function()
+
+local args = {
+	"Mattress"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Canoe", function()
+
+local args = {
+	"Canoe"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Car", function()
+
+local args = {
+	"Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Common = Window:NewSection("Common")
+
+Common:CreateButton("Segway", function()
+
+local args = {
+	"Segway"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Tractor", function()
+
+local args = {
+	"Tractor"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Euro Scooter", function()
+
+local args = {
+	"Euro Scooter"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Go Kart", function()
+
+local args = {
+	"Go Kart"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Small Boat", function()
+
+local args = {
+	"Small Boat"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Quad Bike", function()
+
+local args = {
+	"Quad Bike"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Dirt Bike", function()
+
+local args = {
+	"Dirt Bike"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Toy Car", function()
+
+local args = {
+	"Toy Car"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Bicycle", function()
+
+local args = {
+	"Bicycle"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Scooter", function()
+
+local args = {
+	"Scooter"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Shopping Cart", function()
+
+local args = {
+	"Shopping Cart"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Credits = Window:NewSection("Credits")
+
+
+Credits:CreateButton("OG Script: TGMANKASKE", function()
+
+end)
+
+Credits:CreateButton("Load OG Script", function()
+ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Spawn Cars")
+ 
+local Tab = Window:NewSection("Credits: TGMANKASKE")
+ 
+Tab:CreateButton("Get BEST CAR", function()
+print("HI")
+
+local args = {
+	"Futuristic Supercar"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddVehicleToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+end)
+
+Credits:CreateButton("OG Upload: KMAN", function()
+
+end)
+
+Credits:CreateButton("UPD Script: DOZE", function()
+
+end)
+
+local TGMANKASKE = Window:NewSection("TGMANKASKE Links")
+ 
+TGMANKASKE:CreateButton("Discord Group", function()
+
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+TGMANKASKE:CreateButton("Youtube", function()
+
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+TGMANKASKE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/KMAN")
+toclipboard("https://scriptblox.com/u/KMAN")
+ 
+end)
+
+TGMANKASKE:CreateButton("They Copy To Clipboard", function()
+
+end)
+
+local DOZE = Window:NewSection("DOZE Links")
+ 
+DOZE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/DOZE")
+toclipboard("https://scriptblox.com/u/DOZE")
+ 
+end)

@@ -1,5 +1,4 @@
---give me credits @KMAN
---give me credits @DOZE
+--give credits to @KMAN & @DOZE
  
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Window = Library:NewWindow("Steal a Sword")
@@ -230,6 +229,66 @@ local Credits = Window:NewSection("Credits")
 
 Credits:CreateButton("OG Script: TGMANKASKE", function()
 
+end)
+
+Credits:CreateButton("Load OG Script", function()
+    --loadstring(game:HttpGet('https://pastebin.com/raw/vHZNEsBC'))()
+
+    --give me credits @KMAN
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Free Sworld")
+ 
+local Tab = Window:NewSection("Credits: TGMANKASKE")
+ 
+Tab:CreateButton("Mystic Reaper", function()
+print("HI")
+
+local args = {
+	"Mystic Reaper"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Bloodvine Axe", function()
+print("HI")
+
+local args = {
+	"Bloodvine Axe"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Ice Blade", function()
+print("HI")
+
+local args = {
+	"Ice Blade"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
 end)
 
 Credits:CreateButton("OG Upload: KMAN", function()

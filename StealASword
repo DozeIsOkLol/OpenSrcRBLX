@@ -1,0 +1,278 @@
+--give me credits @KMAN
+--give me credits @DOZE
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Steal a Sword")
+ 
+local Mythical = Window:NewSection("Mythical Swords")
+
+Mythical:CreateButton("Heavens Halberd (Best)", function()
+
+local args = {
+	"Heavens Halberd"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+end)
+ 
+Mythical:CreateButton("Mystic Reaper", function()
+
+local args = {
+	"Mystic Reaper"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Mythical:CreateButton("Bloodvine Axe", function()
+
+local args = {
+	"Bloodvine Axe"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+local Legendary = Window:NewSection("Legendary Swords")
+
+Legendary:CreateButton("Thunder Hammer", function()
+
+local args = {
+	"Thunder Hammer"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Shadow Scythe", function()
+
+local args = {
+	"Shadow Scythe"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Dragon Spear", function()
+
+local args = {
+	"Dragon Spear"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Ice Blade", function()
+
+local args = {
+	"Ice Blade"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Legendary:CreateButton("Inferno Blade", function()
+
+local args = {
+	"Inferno Blade"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+local Rare = Window:NewSection("Rare Swords")
+
+Rare:CreateButton("Hammer", function()
+
+local args = {
+	"Hammer"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Icicle", function()
+
+local args = {
+	"Icicle"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Morning Star", function()
+
+local args = {
+	"Morning Star"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Pitchfork", function()
+
+local args = {
+	"Pitchfork"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Rare:CreateButton("Katana", function()
+
+local args = {
+	"Katana"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+
+
+local UnCommon = Window:NewSection("Uncommon Swords")
+
+UnCommon:CreateButton("Stop Sign", function()
+
+local args = {
+	"Stop Sign"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Axe", function()
+
+local args = {
+	"Axe"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Bone Club", function()
+
+local args = {
+	"Bone Club"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Boxing Glove", function()
+
+local args = {
+	"Boxing Glove"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+UnCommon:CreateButton("Shovel", function()
+
+local args = {
+	"Shovel"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+
+
+local Common = Window:NewSection("Common Swords")
+
+Common:CreateButton("Bamboo Staff", function()
+
+local args = {
+	"Bamboo Staff"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Bat", function()
+
+local args = {
+	"Bat"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Rake", function()
+
+local args = {
+	"Rake"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Plunger", function()
+
+local args = {
+	"Plunger"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+Common:CreateButton("Wooden Sword", function()
+
+local args = {
+	"Wooden Sword"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase"):FireServer(unpack(args))
+
+end)
+
+
+local Credits = Window:NewSection("Credits")
+
+
+Credits:CreateButton("OG Script: TGMANKASKE", function()
+
+end)
+
+Credits:CreateButton("OG Upload: KMAN", function()
+
+end)
+
+Credits:CreateButton("UPD Script: DOZE", function()
+
+end)
+
+local TGMANKASKE = Window:NewSection("TGMANKASKE Links")
+ 
+TGMANKASKE:CreateButton("Discord Group", function()
+
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+TGMANKASKE:CreateButton("Youtube", function()
+
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+TGMANKASKE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/KMAN")
+toclipboard("https://scriptblox.com/u/KMAN")
+ 
+end)
+
+TGMANKASKE:CreateButton("They Copy To Clipboard", function()
+
+end)
+
+local DOZE = Window:NewSection("DOZE Links")
+ 
+DOZE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/DOZE")
+toclipboard("https://scriptblox.com/u/DOZE")
+ 
+end)

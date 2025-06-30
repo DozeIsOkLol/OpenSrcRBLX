@@ -1,4 +1,5 @@
 --give credits to @KMAN & @DOZE
+
  
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Window = Library:NewWindow("Steal a Sword")

@@ -1,0 +1,626 @@
+--give credits to @KMAN & @DOZE
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Grow a Mine")
+ 
+local Upgrade = Window:NewSection("Upgrade's")
+
+Upgrade:CreateButton("Cosmify (Best)", function()
+
+local args = {
+	"Cosmify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Upgrade:CreateButton("Goldify", function()
+
+local args = {
+	"Goldify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Chargify", function()
+
+local args = {
+	"Chargify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Flamify", function()
+
+local args = {
+	"Flamify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Aurorify", function()
+
+local args = {
+	"Aurorify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Freezify", function()
+
+local args = {
+	"Freezify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Glowify", function()
+
+local args = {
+	"Glowify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+Upgrade:CreateButton("Cool Worker", function()
+
+local args = {
+	"Cool Worker",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Upgrade:CreateButton("Royalify (IDK what this one does)", function()
+
+local args = {
+	"Royalify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+
+
+local Miner = Window:NewSection("Miner's")
+
+Miner:CreateButton("Crystal Miner (Best)", function()
+
+local args = {
+	"Crystal Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("C4 Guy", function()
+
+local args = {
+	"C4 Guy",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Obsidian Miner", function()
+
+local args = {
+	"Obsidian Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Diamond Miner", function()
+
+local args = {
+	"Diamond Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Mineshaft", function()
+
+local args = {
+	"Mineshaft",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Emerald Miner", function()
+
+local args = {
+	"Emerald Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Gold Miner", function()
+
+local args = {
+	"Gold Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Iron Miner", function()
+
+local args = {
+	"Iron Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Copper Miner", function()
+
+local args = {
+	"Copper Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Coal Miner", function()
+
+local args = {
+	"Coal Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Stone Miner", function()
+
+local args = {
+	"Stone Miner",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Digger", function()
+
+local args = {
+	"Digger",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Miner:CreateButton("Rock Rookie", function()
+
+local args = {
+	"Rock Rookie",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+
+
+
+
+local Drill = Window:NewSection("Drill's")
+
+Drill:CreateButton("Laser Drill (Best)", function()
+
+local args = {
+	"Laser Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Drill:CreateButton("Diamond Drill", function()
+
+local args = {
+	"Diamond Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Drill:CreateButton("Golden Drill", function()
+
+local args = {
+	"Golden Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Drill:CreateButton("Iron Drill", function()
+
+local args = {
+	"Iron Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Drill:CreateButton("Drill", function()
+
+local args = {
+	"Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Drill:CreateButton("Rusty Drill", function()
+
+local args = {
+	"Rusty Drill",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+
+local Money = Window:NewSection("Money")
+
+Money:CreateButton("+10k", function()
+local args = {
+	"10K",
+	-10000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+25k", function()
+local args = {
+	"25k",
+	-25000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+50k", function()
+local args = {
+	"50k",
+	-50000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+100k", function()
+local args = {
+	"100k",
+	-100000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+1M", function()
+local args = {
+	"1M",
+	-1000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+5M", function()
+local args = {
+	"5M",
+	-5000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+10M", function()
+local args = {
+	"10M",
+	-10000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+50M", function()
+local args = {
+	"50M",
+	-50000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+100M", function()
+local args = {
+	"100M",
+	-100000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+500M", function()
+local args = {
+	"500M",
+	-500000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+1B", function()
+local args = {
+	"1B",
+	-1000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+10B", function()
+local args = {
+	"10B",
+	-10000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+100B", function()
+local args = {
+	"100B",
+	-100000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+1T", function()
+local args = {
+	"1T",
+	-1000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+10T", function()
+local args = {
+	"10T",
+	-10000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+100T", function()
+local args = {
+	"100T",
+	-100000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+1Qd", function()
+local args = {
+	"1Qd",
+	-1000000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+10Qd", function()
+local args = {
+	"10Qd",
+	-10000000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+100Qd", function()
+local args = {
+	"100Qd",
+	-100000000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("+1Qt", function()
+local args = {
+	"1Qt",
+	-1000000000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Money:CreateButton("Max Money", function()
+local args = {
+	"Max Money",
+	-9223372036854775000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+
+
+
+
+
+
+local Credits = Window:NewSection("Credits")
+
+
+Credits:CreateButton("OG Script: TGMANKASKE", function()
+
+end)
+
+Credits:CreateButton("Load OG Script", function()
+ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Script")
+ 
+local Tab = Window:NewSection("Credits: TGMANKASKE")
+ 
+Tab:CreateButton("Get BEST Upgrade", function()
+print("HI")
+
+local args = {
+	"Cosmify",
+	0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Get BEST Drill", function()
+print("HI")
+
+local args = {
+	"Laser Drill",
+	-0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Inf. Money", function()
+print("HI")
+
+local args = {
+	"Thx for using my script",
+	-9999999999999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Buy"):FireServer(unpack(args))
+
+end)
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+
+ 
+Tab:CreateButton("Youtube", function()
+print("HI")
+ 
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+end)
+
+Credits:CreateButton("OG Upload: KMAN", function()
+
+end)
+
+Credits:CreateButton("UPD Script: DOZE", function()
+
+end)
+
+local TGMANKASKE = Window:NewSection("TGMANKASKE Links")
+ 
+TGMANKASKE:CreateButton("Discord Group", function()
+
+ 
+setclipboard("https://discord.gg/8A6k73JqCM")
+toclipboard("https://discord.gg/8A6k73JqCM")
+ 
+end)
+ 
+TGMANKASKE:CreateButton("Youtube", function()
+
+setclipboard("https://www.youtube.com/@TGMANKASKE")
+toclipboard("https://www.youtube.com/@TGMANKASKE")
+ 
+end)
+
+TGMANKASKE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/KMAN")
+toclipboard("https://scriptblox.com/u/KMAN")
+ 
+end)
+
+TGMANKASKE:CreateButton("They Copy To Clipboard", function()
+
+end)
+
+local DOZE = Window:NewSection("DOZE Links")
+ 
+DOZE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/DOZE")
+toclipboard("https://scriptblox.com/u/DOZE")
+ 
+end)

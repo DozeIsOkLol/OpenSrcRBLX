@@ -1,0 +1,574 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window  = Library:NewWindow("NØVA | BETA")
+
+
+local GamePlaceId = game.PlaceId
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(GamePlaceId).Name
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = Players.LocalPlayer.name
+
+--[[
+local GameJobId = game.JobId
+local AccountAge = player.AccountAge
+local hasPremium = player.MembershipType == Enum.MembershipType.Premium
+
+local time = os.time()
+local date = os.date("*t", time)
+
+local hour = date.hour % 12
+if hour == 0 then
+    hour = 12
+end
+
+local min = string.format("%02d", date.min)
+local sec = string.format("%02d", date.sec)
+
+local ampm = date.hour >= 12 and "PM" or "AM"
+]]
+
+
+local Info = Window:NewSection("Info")
+
+
+Info:CreateButton("Welcome "..playerName.."!", function()
+
+end)
+
+Info:CreateButton("Game: " .. GameName, function()
+
+end)
+
+--[[
+
+Testing:CreateButton("Game ID: " .. GamePlaceId, function()
+
+end)
+
+Testing:CreateButton("JobId: " .. GameJobId, function()
+
+end)
+
+Testing:CreateButton("Account Age: " .. AccountAge.. " Days", function()
+
+end)
+
+Testing:CreateButton("Player Premium: " .. (hasPremium and "yes" or "no"), function()
+
+end)
+
+Testing:CreateButton("Executed: " .. date.day .. "/" .. date.month .. "/" .. date.year .. " " .. hour .. ":" .. min .. ":" .. sec .. " " .. ampm, function()
+
+end)
+
+]]
+
+
+local supportedGames = {
+    [113809264674979] = true, -- steal a sword
+    [113995904598360] = true, -- steal anime
+    [125192940191000] = true, -- Steal a Ride
+    [74392180661358] = true, -- Grow a Mine
+    -- add more supported PlaceIds here
+}
+
+local isSupported = supportedGames[GamePlaceId] and "Yes" or "No"
+
+
+Info:CreateButton("Game Supported: " .. isSupported, function()
+
+end)
+
+-- Define game statuses
+local gameStatus = {
+    [115786048314748] = "WIP",     -- 🟪 Purple Box
+
+    [113809264674979] = "Working",           -- 🟩 Green Box
+    [113995904598360] = "Working",
+    [125192940191000] = "Working",
+    [74392180661358] = "Working",
+
+
+
+
+    [123456789] = "Not Working",       -- 🟥 Red Box
+
+
+    -- leave games out of this table to be considered "Untested"
+}
+
+-- Get current status
+local status = gameStatus[GamePlaceId] or "Untested"
+
+-- Pick emoji based on status
+local statusEmoji = status == "Working" and "🟩"
+    or status == "Not Working" and "🟥"
+    or status == "WIP" and "🟪"
+    or "🟨" -- Default: Untested
+
+-- Create section
+
+Info:CreateButton("Game Status: " .. status .. " " .. statusEmoji, function()
+
+end)
+
+
+-- Function to detect executor
+local function detectExecutor()
+    local nameFromAPI = getexecutorname and getexecutorname():lower() or ""
+
+    local executorChecks = {
+        ["Synapse X"] = syn and true,
+        ["Script-Ware"] = identifyexecutor and identifyexecutor() == "ScriptWare",
+        ["Krnl"] = KRNL_LOADED,
+        ["Fluxus"] = fluxus,
+        ["Trigon"] = iswindowactive and getrenv,
+        ["Electron"] = isElectron,
+        ["SirHurt"] = is_sirhurt_closure,
+        ["Comet"] = comet,
+        ["Arceus X"] = nameFromAPI:find("arceus"),
+        ["JJSploit"] = isjj,
+        ["Xeno"] = nameFromAPI:find("xeno"),
+        ["Velocity"] = nameFromAPI:find("velocity"),
+        ["Delta"] = nameFromAPI:find("delta"),
+        ["Solara"] = nameFromAPI:find("solara"),
+        ["Swift"] = nameFromAPI:find("swift"),
+        ["AWP"] = nameFromAPI:find("awp"),
+        ["Ro-Exec"] = nameFromAPI:find("ro%-exec") or nameFromAPI:find("roexec"),
+        ["Neo"] = nameFromAPI:find("neo"),
+        ["Evon"] = nameFromAPI:find("evon"),
+        ["Hydrogen"] = nameFromAPI:find("hydrogen"),
+        ["Sentinel"] = nameFromAPI:find("sentinel"),
+        ["Evon Nezur"] = nameFromAPI:find("nezur"),
+        ["Ronix"] = nameFromAPI:find("ronix"),
+        ["Wave"] = nameFromAPI:find("Wave"),
+    }
+
+    for name, check in pairs(executorChecks) do
+        if check then
+            return name
+        end
+    end
+
+    return "Unknown / Unsupported"
+end
+
+-- Detect and display
+local executorName = detectExecutor()
+
+Info:CreateButton("Executor Detected: " .. executorName, function()
+
+end)
+
+
+--Other tings
+local client = game.Players.LocalPlayer
+local char = client.Character
+
+--inf 
+local noclip = false
+local infjumpenabled = false
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    if noclip == true then
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    end
+end)
+
+game:GetService("UserInputService").JumpRequest:Connect(function()
+	if infjumpenabled then
+		game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+	end
+end)
+
+--universal
+
+local PlayerTab = Window:NewSection("Player Settings")
+
+--Player Section
+
+PlayerTab:CreateButton("Break Joints", function()
+local player = game.Players.LocalPlayer.Name
+game.workspace[player]:BreakJoints()
+end)
+
+PlayerTab:CreateButton("Reset Character", function()
+local playerrr = game.Players.LocalPlayer
+local nameofplayerrr = player.Character.Name
+print(nameofplayerrr)
+game.Workspace[nameofplayerrr].Humanoid.Health = 0
+warn("Player Reset!")
+end)
+
+
+PlayerTab:CreateToggle("noclip", function(Value)
+noclip = Value
+end)
+
+PlayerTab:CreateToggle("Inf Jump", function(Value)
+infjumpenabled = Value
+end)
+
+
+Fly = false    
+      function activatefly()
+         local mouse=game.Players.LocalPlayer:GetMouse''
+         localplayer=game.Players.LocalPlayer
+         game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+         local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
+         local speed=150
+         local keys={a=false,d=false,w=false,s=false}
+         local e1
+         local e2
+         local function start()
+            local pos = Instance.new("BodyPosition",torso)
+            local gyro = Instance.new("BodyGyro",torso)
+            pos.Name="EPIXPOS"
+            pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+            pos.position = torso.Position
+            gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+            gyro.cframe = torso.CFrame
+            repeat
+                  wait()
+                  localplayer.Character.Humanoid.PlatformStand=true
+                  local new=gyro.cframe - gyro.cframe.p + pos.position
+                  if not keys.w and not keys.s and not keys.a and not keys.d then
+                     speed=1
+                  end
+                  if keys.w then
+                     new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                     speed=speed+0.02
+                  end
+                  if keys.s then
+                     new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                     speed=speed+0.02
+                  end
+                  if keys.d then
+                     new = new * CFrame.new(speed,0,0)
+                     speed=speed+0.02
+                  end
+                  if keys.a then
+                     new = new * CFrame.new(-speed,0,0)
+                     speed=speed+0.02
+                  end
+                  if speed>5 then
+                     speed=5.5
+                  end
+                  pos.position=new.p
+                  if keys.w then
+                     gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*15),0,0)
+                  elseif keys.s then
+                     gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*15),0,0)
+                  else
+                     gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+                  end
+            until not Fly
+            if gyro then 
+                  gyro:Destroy() 
+            end
+            if pos then 
+                  pos:Destroy() 
+            end
+            flying=false
+            localplayer.Character.Humanoid.PlatformStand=false
+            speed=0
+         end
+         e1=mouse.KeyDown:connect(function(key)
+            if not torso or not torso.Parent then 
+                  flying=false e1:disconnect() e2:disconnect() return 
+            end
+            if key=="w" then
+                  keys.w=true
+            elseif key=="s" then
+                  keys.s=true
+            elseif key=="a" then
+                  keys.a=true
+            elseif key=="d" then
+                  keys.d=true
+            end
+         end)
+         e2=mouse.KeyUp:connect(function(key)
+            if key=="w" then
+                  keys.w=false
+            elseif key=="s" then
+                  keys.s=false
+            elseif key=="a" then
+                  keys.a=false
+            elseif key=="d" then
+                  keys.d=false
+            end
+         end)
+         start()
+      end
+
+
+PlayerTab:CreateToggle("Fly", function(Value)
+Fly = Value
+         activatefly()
+end)
+
+PlayerTab:CreateButton("Anti-AFK", function()
+   local hook = game:GetService("Players").LocalPlayer.Kick;
+local mt = getrawmetatable(game:GetService("Players").LocalPlayer)
+local OldNamecall = mt.__namecall
+local OldIndex = mt.__index
+
+make_writeable(mt)
+mt.__namecall = newcclosure(function(self, Index, ...)
+    local NameCallMethod = getnamecallmethod()
+    if type(NameCallMethod) == "string" then
+        if NameCallMethod == "Kick" or NameCallMethod == "kick" then
+            print("Prevented Kick At " .. tostring(os.time()))
+            return function()end
+        end
+    end
+    return OldNamecall(self, Index, ...)
+end)
+
+mt.__index = newcclosure(function(self, Index, ...)
+    if type(Index) == "string" then
+        if Index == "Kick" or Index == "kick" then
+            print("Prevented Kick At " .. tostring(os.time()))
+            return function()end
+        end
+    end
+    return OldIndex(self, Index, ...)
+end)
+make_readonly(mt)
+end)
+
+
+
+PlayerTab:CreateSlider("Walkspeed", 1, 100, 16, false, function(Value)
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
+ end)
+
+ PlayerTab:CreateSlider("Jump power", 1, 100, 30, false, function(Value)
+game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = Value
+ end)
+
+ PlayerTab:CreateSlider("Gravity", 1, 100, 100, false, function(Value)
+workspace.Gravity = Value
+ end)
+
+
+local GameTab = Window:NewSection("Game Settings")
+
+GameTab:CreateButton("Rejoin Game", function()
+wait(2)
+
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+
+ts:Teleport(game.PlaceId, p)  
+end)
+
+GameTab:CreateButton("FPS Booster", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/FPSBooster"))()
+end)
+
+GameTab:CreateButton("HD Graphics", function()
+
+_G.BlurSize = 1
+
+_G.ColorCorrectionBrightness = 0.03
+_G.ColorCorrectionContrast = 0.3
+_G.ColorCorrectionSaturation = 0.01
+_G.ColorCorrectionTintColor = Color3.fromRGB(244,244,244)
+
+_G.SunRaysIntensity = 0.2
+_G.SunRaysSpread = 1
+
+-- Lighting settings:
+_G.GlobalShadows = true
+_G.Brightness = 0.9
+_G.GeographicLatitude = 350
+_G.TimeOfDay = 17
+_G.ExposureCompensation = 0.03
+
+
+spawn(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/HDGraphics"))()
+end)
+end)
+
+
+--FOV Section
+
+local FOVTab = Window:NewSection("FOV Settings")
+
+FOVTab:CreateButton("Reset FOV", function()
+    game:GetService'Workspace'.Camera.FieldOfView = 70
+end)
+
+
+FOVTab:CreateSlider("Slider", 0, 120, 70, false, function(Value)
+    game:GetService'Workspace'.Camera.FieldOfView = Value
+end)
+
+--Visual Section
+
+local VisualTab = Window:NewSection("Visual Settings")
+
+VisualTab:CreateToggle("X-Ray", function(Value)
+   if Value then
+        for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("BasePart") and not v.Parent.Parent:FindFirstChild("Humanoid") then
+				v.Transparency = v.Transparency + 0.5
+			end
+		end
+    else
+        for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("BasePart") and not v.Parent.Parent:FindFirstChild("Humanoid") then
+				v.Transparency = v.Transparency - 0.5
+			end
+		end
+    end
+end)
+
+
+
+
+
+
+
+VisualTab:CreateToggle("Full Bright", function(Value)
+if not _G.FullBrightExecuted then
+
+	_G.FullBrightEnabled = false
+
+	_G.NormalLightingSettings = {
+		Brightness = game:GetService("Lighting").Brightness,
+		ClockTime = game:GetService("Lighting").ClockTime,
+		FogEnd = game:GetService("Lighting").FogEnd,
+		GlobalShadows = game:GetService("Lighting").GlobalShadows,
+		Ambient = game:GetService("Lighting").Ambient
+	}
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
+		if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
+			_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").Brightness = 1
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
+		if game:GetService("Lighting").ClockTime ~= 12 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
+			_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").ClockTime = 12
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
+		if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
+			_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").FogEnd = 786543
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
+		if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
+			_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").GlobalShadows = false
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
+		if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
+			_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+		end
+	end)
+
+	game:GetService("Lighting").Brightness = 1
+	game:GetService("Lighting").ClockTime = 12
+	game:GetService("Lighting").FogEnd = 786543
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+
+	local LatestValue = true
+	spawn(function()
+		repeat
+			wait()
+		until _G.FullBrightEnabled
+		while wait() do
+			if _G.FullBrightEnabled ~= LatestValue then
+				if not _G.FullBrightEnabled then
+					game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
+					game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
+					game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
+					game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
+					game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
+				else
+					game:GetService("Lighting").Brightness = 1
+					game:GetService("Lighting").ClockTime = 12
+					game:GetService("Lighting").FogEnd = 786543
+					game:GetService("Lighting").GlobalShadows = false
+					game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+				end
+				LatestValue = not LatestValue
+			end
+		end
+	end)
+end
+
+_G.FullBrightExecuted = Value
+_G.FullBrightEnabled = not _G.FullBrightEnabled
+end)
+
+
+wait(10)
+
+--Steal a Sword
+if game.PlaceId == 113809264674979 then
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/StealASword'))()
+
+end
+--[[
+--Steal Anime!
+if game.PlaceId == 113995904598360 then
+
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/StealAnime"))()
+
+end
+]]
+--Steal a Ride
+if game.PlaceId == 125192940191000 then
+
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/StealARide"))()
+
+end
+
+--Grow a Mine
+if game.PlaceId == 74392180661358 then
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DozeIsOkLol/OpenSrcRBLX/refs/heads/main/GrowAMine"))()
+
+end

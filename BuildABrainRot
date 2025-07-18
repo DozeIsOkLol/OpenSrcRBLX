@@ -1,0 +1,69 @@
+--give me credits @KMAN
+ 
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Build a Brainrot")
+ 
+local Tab = Window:NewSection("Main")
+
+
+Tab:CreateButton("Buy All Tools", function()
+print("HI")
+
+local args = {
+	"Rocket Launcher",
+    "Invisible Slap",
+    "Black Hole Coil",
+    "Speed Coil",
+    "Slap",
+    "Magic Carpet",
+    "Iron Slap",
+    "Hybrid Coil",
+    "Laser Gun",
+    
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("buyTool"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Enter Cash Amount (E.g. 9.2e15", function()
+
+local args = {
+	"Cash",
+	92000000000000000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("giveRewards"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateTextbox("Inf. Money", function(text)
+local args = {
+	"Cash",
+	text
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("giveRewards"):FireServer(unpack(args))
+end)
+
+
+
+
+local Credits = Window:NewSection("Credits")
+ 
+
+Credits:CreateButton("Scripter: Afterware", function()
+
+end)
+
+Credits:CreateButton("Upload: Afterware", function()
+
+end)
+
+
+
+local DOZE = Window:NewSection("Afterware Links")
+ 
+DOZE:CreateButton("ScriptBlox", function()
+
+setclipboard("https://scriptblox.com/u/Afterware")
+toclipboard("https://scriptblox.com/u/Afterware")
+ 
+end)
